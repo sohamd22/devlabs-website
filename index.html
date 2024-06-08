@@ -8,143 +8,88 @@
 	<link href=
 "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
 		rel="stylesheet">
+
+    <style>
+        section ::-webkit-scrollbar {
+            width: 0;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <img src="" alt="devlabs-logo">  
+<body class="bg-black text-gray-400" style="font-family: Manrope;">
+    <header class="container mx-auto flex justify-between items-center border border-dashed border-gray-700">
+        <img src="" alt="devlabs-logo" class="w-32">  
         
-        <div>
-            <a href="">
-                join devlabs
-            </a>
-        </div>
+        <a href="" class="text-base font-semibold text-white px-6 py-4 border border-dashed border-gray-700">
+            join devlabs
+        </a>
     </header>
 
-    <section>
-        <div>
-            <div>
-                <span>first meeting on aug 26</span>  
-                <h1>want to learn how to <mark>build products</mark> people love?</h1>
-                <a href="">join devlabs (takes 20s)</a>
+    <section class="container mx-auto px-6 h-screen grid grid-cols-3 border border-dashed border-gray-700 mb-24">
+        <div class="col-span-2 w-5/6 h-screen bg-clip-border overflow-y-scroll">
+            <div class="h-screen flex flex-col gap-16 pt-44">
+                <div class="flex flex-col gap-6">
+                    <span class="w-max font-normal p-2 border border-dashed border-gray-700">first meeting on aug 26</span>  
+                    <h1 class="text-7xl font-extrabold leading-tight text-white">want to learn how to <mark style="all: unset; color: #FDCA67;">build products</mark> people love?</h1>
+                </div>
+                <a href="" class="text-xl bg-white font-semibold text-black w-max px-6 py-4">join devlabs (takes 20s)</a>
             </div>
 
-            <div>
-                <h2>we host meetings every week</h2>
-                <p>this is where you will take any idea you're excited about, figure out how to bring it to life, and turn it into something that people give a shit about - alongside thousands of others.</p>
+            <div class="flex flex-col gap-16 pb-80">
+                <h2 class="text-6xl font-extrabold text-white leading-tight">we host meetings <mark style="all: unset; color: #FDCA67;">every week</mark></h2>
+                <p class="text-2xl font-medium leading-normal">this is where you will take any idea you're excited about, figure out how to bring it to life, and turn it into something that people give a shit about - alongside thousands of others.</p>
                 <div>
-                    <span>in-person socializing</span>
-                    <span>1 hour/week</span>
-                    <span>free pizza and goodies</span>
+                    <span class="w-max font-normal p-2 border border-dashed border-gray-700">in-person socializing</span>
+                    <span class="w-max font-normal p-2 border border-dashed border-gray-700">1 hour/week</span>
+                    <span class="w-max font-normal p-2 border border-dashed border-gray-700">free pizza and goodies</span>
                 </div>
             </div>
         </div>
 
         <div> <!-- vertically scrolling project images -->
             <div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
+                <!-- {[].map(() => (
+                    <div>
+                        <img src="" alt="">
+                        <p class="text-2xl font-medium leading-normal"></p>
+                    </div>
+                  ))} -->
             </div>
             <div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
+                <!-- {[].map(() => (
+                    <div>
+                        <img src="" alt="">
+                        <p class="text-2xl font-medium leading-normal"></p>
+                    </div>
+                  ))} -->
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="container mx-auto px-6 border border-dashed border-gray-700 mb-24">
         <div> <!-- horizontally scrolling team images -->
             <div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
+                {[].map(() => (
+                    <div>
+                        <img src="" alt="">
+                        <p class="text-2xl leading-normal"></p>
+                    </div>
+                  ))}
             </div>
         </div>
     </section>
 
-    <section>
-        <span>what's our mission?</span>
-
-        <h2>we want to make computer science <mark>fun to learn</mark>.</h2>
-        <p>it's pretty simple. you pick your own idea, build it, get feedback, and iterate. alongside thousands of others. we'll provide hacks + support, but our main goal is to just get you going and make progress.</p>
-        <p>all it takes is a <a href="">single click</a> to join</p>
+    <section class="container mx-auto px-6 border border-dashed border-gray-700 flex flex-col items-center mb-24">
+        <div class="w-2/3 flex flex-col gap-16 items-center text-center py-40">
+            <span class="w-max font-normal p-2 border border-dashed border-gray-700">what's our mission?</span>
+            <h2 class="text-6xl font-extrabold text-white leading-tight">we want to make computer science <mark style="all: unset; color: #FDCA67;">fun to learn</mark>.</h2>
+            <p class="text-2xl font-medium leading-normal">it's pretty simple. you pick your own idea, build it, get feedback, and iterate. alongside thousands of others. we'll provide hacks + support, but our main goal is to just get you going and make progress.</p>
+            <p class="text-2xl font-medium leading-normal">all it takes is a <a href="" class="text-white">single click</a> to join</p>
+        </div>
 
         <div>
             <img src="" alt="">
@@ -153,23 +98,23 @@
         </div>
     </section>
 
-    <section>
-        <span>first meeting on aug 26</span>
-
-        <h1>ready to build <mark>awesomeness</mark>?</h1>
-
-        <a href="">join devlabs</a>
+    <section class="container mx-auto px-6 border border-dashed border-gray-700 flex flex-col items-center">
+        <div class="w-1/2 flex flex-col gap-16 items-center text-center pt-40 pb-52">
+            <span class="w-max font-normal p-2 border border-dashed border-gray-700">first meeting on aug 26</span>
+            <h1 class="text-7xl font-extrabold text-white">ready to build <mark style="all: unset; color: #FDCA67;">awesomeness</mark>?</h1>
+            <a href="" class="text-xl text-xl bg-white font-semibold text-black w-max px-6 py-4">join devlabs (takes 20s)</a>
+        </div>
     </section>
 
-    <footer>
-        <nav>
+    <footer class="container mx-auto fixed bottom-0 left-0 right-0 bg-black flex justify-between p-6 border border-dashed border-gray-700">
+        <nav class="flex gap-6">
             <a href="">about us</a>
             <a href="">our team</a>
             <a href="">our mission</a>
             <a href="">join us</a>
         </nav>
 
-        <div>
+        <div class="flex gap-6">
             <a href=""><img src="" alt="devlabs-email"></a>
             <a href=""><img src="" alt="devlabs-instagram"></a>
             <a href=""><img src="" alt="devlabs-discord"></a>
