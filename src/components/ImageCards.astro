@@ -1,0 +1,16 @@
+---
+interface Props {
+    items: Array<string>;
+}
+
+const { items } = Astro.props;
+---
+
+{items.map(item => (
+    <div class="aspect-square border border-dashed border-gray-700 flex flex-col justify-between shrink-0">
+        <img class="h-3/4" alt="a">
+        <div class="h-1/4 border border-dashed border-gray-700 px-5 py-4 text-center flex justify-center items-center">
+            <p class="text-base font-semibold leading-tight">{item}</p>
+        </div>
+    </div>
+))}

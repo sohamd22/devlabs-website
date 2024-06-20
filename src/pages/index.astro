@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Main from '../components/Main.astro';
+import Team from '../components/Team.astro';
+import CenteredSection from '../components/CenteredSection.astro';
+import Navbar from '../components/Navbar.astro';
+---
+
+<Layout title="DevLabs">
+	<Header />
+
+    <Main />
+
+    <Team members={["soham daga", "dhravya shah", "dhanush vardhan", "bhoomi singhani", "aryan keluskar"]}/>
+
+    <CenteredSection className="mb-24">
+        <div class="w-2/3 flex flex-col gap-16 items-center text-center py-40">
+            <span class="w-max font-normal p-2 border border-dashed border-gray-700">what's our mission?</span>
+            <h2 class="xl:text-6xl md:text-5xl text-4xl font-extrabold text-white leading-tight">we want to make computer science <mark style="all: unset; color: #FDCA67;">fun to learn</mark>.</h2>
+            <p class="xl:text-2xl md:text-xl text-lg font-medium leading-normal">it's pretty simple. you pick your own idea, build it, get feedback, and iterate. alongside thousands of others. we'll provide hacks + support, but our main goal is to just get you going and make progress.</p>
+            <p class="xl:text-2xl md:text-xl text-lg font-medium leading-normal">all it takes is a <a href="" class="text-white underline">single click</a> to join</p>
+        </div>
+    
+        <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 w-full">
+            <img src="" alt="1">
+            <img src="" alt="2" class="md:block hidden">
+            <img src="" alt="3" class="md:block hidden">
+        </div>
+    </CenteredSection>
+
+    <CenteredSection className="pt-40 pb-52">
+        <div class="w-1/2 flex flex-col gap-16 items-center text-center">
+            <span class="w-max font-normal p-2 border border-dashed border-gray-700">first meeting on aug 26</span>
+            <h1 class="2xl:text-7xl xl:text-6xl text-5xl font-extrabold text-white tracking-tighter">ready to build <mark style="all: unset; color: #FDCA67;">awesomeness</mark>?</h1>
+            <a href="" class="xl:text-xl md:text-lg text-base bg-white font-semibold text-black w-max px-6 py-4">join devlabs (takes 20s)</a>
+        </div>
+    </CenteredSection>
+
+    <Navbar />
+</Layout>
+
+
