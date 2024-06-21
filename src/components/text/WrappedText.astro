@@ -1,0 +1,9 @@
+---
+interface Props {
+	size: string;
+}
+
+const { size } = Astro.props;
+---
+
+{size == "large" ? <span class="xl:text-xl md:text-lg text-base w-max font-normal p-3 border border-dashed border-gray-700"><slot /></span> : <span class="w-max font-normal p-2 border border-dashed border-gray-700"><slot /></span>}

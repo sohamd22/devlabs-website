@@ -4,12 +4,12 @@ interface Props {
 }
 const { members } = Astro.props;
 
-import TeamCards from '../components/TeamCards.astro';
+import Cards from '../components/Cards.astro';
 import Scroll from '../components/Scroll.astro';
 ---
 
-<section class="container mx-auto box-border overflow-hidden border border-dashed border-gray-700 mb-24">
+<section class="container mx-auto box-border overflow-hidden mb-24">
     <Scroll direction="horizontal">
-        <TeamCards members={members} />
+        <Cards items={members} className='' />
     </Scroll>
 </section>

@@ -4,8 +4,6 @@ interface Props {
 }
 
 const { title } = Astro.props;
-
-import '../styles/output.css';
 ---
 
 <!doctype html>
@@ -21,11 +19,8 @@ import '../styles/output.css';
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
-		<!-- Tailwind CSS -->
-		<link href="../styles/output.css" rel="stylesheet">
 	</head>
-	<body class="bg-black text-gray-400">
+	<body class="text-gray-400">
 		<slot />
 	</body>
 </html>
@@ -35,7 +30,7 @@ import '../styles/output.css';
 	}
 
 	body {
-		/* background-color: #232428;  */
+		background-color: #080808; 
 		background-image: url('/noise.png');
 	}
 </style>
