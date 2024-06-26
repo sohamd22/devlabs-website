@@ -2,13 +2,14 @@
 interface Props {
 	top: string;
     left: string;
+    right: string;
     scale: string;
 }
 
-const { top, left, scale } = Astro.props;
+const { top, left, right, scale } = Astro.props;
 ---
 
-<svg width="882" height="874" viewBox="0 0 882 874" fill="none" xmlns="http://www.w3.org/2000/svg" style=`position: absolute; opacity: 0.2; top: ${top}; left: ${left}; transform: scale(${scale}); z-index: -1`>
+<svg width="882" height="874" viewBox="0 0 882 874" fill="none" xmlns="http://www.w3.org/2000/svg" style=`position: absolute; opacity: 0.2; top: ${top}; ${left ? "left: " + left : "right: " + right}; transform: scale(${scale}); z-index: -1`>
     <g opacity="0.6" filter="url(#filter0_f_113_2)">
     <mask id="mask0_113_2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="180" y="180" width="522" height="514">
     <path d="M701.458 532.908C701.516 530.206 700.784 527.375 699.339 524.701C697.894 522.028 695.787 519.608 693.232 517.69L504.057 375.613L679.337 208.045C681.599 205.739 682.771 202.59 682.665 199.105C682.559 195.62 681.182 192.002 678.754 188.833C676.326 185.664 672.989 183.129 669.28 181.636C665.572 180.142 661.708 179.778 658.31 180.601L189.469 326.146C186.828 326.864 184.605 328.29 183.03 330.278C181.455 332.266 180.586 334.744 180.511 337.456C180.436 340.168 181.158 343.016 182.604 345.707C184.049 348.397 186.165 350.833 188.733 352.762L375.082 492.715L206.167 665.514C204.005 667.882 202.938 671.058 203.134 674.538C203.33 678.017 204.779 681.601 207.25 684.718C209.721 687.835 213.072 690.307 216.77 691.74C220.469 693.173 224.301 693.484 227.659 692.625L692.672 544.26C695.282 543.514 697.471 542.071 699.014 540.077C700.558 538.082 701.401 535.609 701.458 532.908Z" fill="black"/>

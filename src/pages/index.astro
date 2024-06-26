@@ -25,14 +25,17 @@ import GradientBlob from '../components/GradientBlob.astro';
 
     <Main />
 
-    <CenteredSection id="mission" className="mb-24">
-        <GradientBlob top="200px" left="65%" scale="1" />
+    <CenteredSection id="about" className="mb-24">
+        <GradientBlob top="-450px" right="-350px" scale="1.5" />
 
-        <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:py-40 py-20">
-            <WrappedText size="normal" className=''>what's our mission?</WrappedText>
-            <Heading>we want to make computer science <Highlight>fun to learn</Highlight>.</Heading>
-            <Paragraph>it's pretty simple. you pick your own idea, build it, get feedback, and iterate. alongside thousands of others. we'll provide hacks + support, but our main goal is to just get you going and make progress.</Paragraph>
-            <Paragraph>all it takes is a <a href="" class="text-white underline">single click</a> to join</Paragraph>
+        <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:pt-40 md:pb-32 py-20">
+            <div class="flex flex-wrap gap-2 md:justify-start justify-center">
+                <WrappedText size="large" className="border-red-500 text-red-500">in-person socializing</WrappedText>
+                <WrappedText size="large" className="border-orange-500 text-orange-500">1 hour/week</WrappedText>
+                <WrappedText size="large" className="border-amber-500 text-amber-500">free pizza and goodies</WrappedText>
+            </div>
+            <Heading>we host meetings <Highlight>every week</Highlight></Heading>
+            <Paragraph>this is where you will take any idea you're excited about, figure out how to bring it to life, and turn it into something that people give a shit about - alongside thousands of others.</Paragraph>
         </div>
 
         <div class="box-border overflow-hidden w-full">
@@ -42,10 +45,21 @@ import GradientBlob from '../components/GradientBlob.astro';
         </div>
     </CenteredSection>
 
+    <CenteredSection id="mission" className="mb-24">
+        <GradientBlob top="-450px" left="-350px" scale="1.5" />
+
+        <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:py-40 py-20">
+            <WrappedText size="normal" className=''>what's our mission?</WrappedText>
+            <Heading>we want to make computer science <Highlight>fun to learn</Highlight>.</Heading>
+            <Paragraph>it's pretty simple. you pick your own idea, build it, get feedback, and iterate. alongside thousands of others. we'll provide hacks + support, but our main goal is to just get you going and make progress.</Paragraph>
+            <Paragraph>all it takes is a <a href="" class="text-white underline">single click</a> to join</Paragraph>
+        </div>
+    </CenteredSection>
+
     <Team members={[["soham daga", "/team/soham.png"], ["dhravya shah", "/team/dhravya.png"], ["dhanush vardhan", "/team/dhanush.png"], ["bhoomi singhani", "/team/bhoomi.png"], ["aryan keluskar", "/team/aryan.png"]]}/>
 
     <CenteredSection id="join" className="md:pt-40 md:pb-52 pt-20 pb-40 overflow-hidden">
-        <GradientBlob top="0" left="10%" scale="1.5" />
+        <GradientBlob top="0" left="5%" scale="1.5" />
         <div class="w-1/2 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center">
             <WrappedText size="normal" className=''>first meeting on aug 26</WrappedText>
             <HeadingBig>ready to build <Highlight>awesomeness</Highlight>?</HeadingBig>
