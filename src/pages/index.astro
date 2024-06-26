@@ -29,34 +29,35 @@ import GradientBlob from '../components/GradientBlob.astro';
         <GradientBlob top="-450px" right="-350px" scale="1.5" />
 
         <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:pt-40 md:pb-32 py-20">
+            <WrappedText size="normal" className=''>what do we do?</WrappedText>
+            <Heading>we host meetings <Highlight>every week</Highlight></Heading>
             <div class="flex flex-wrap gap-2 md:justify-start justify-center">
                 <WrappedText size="large" className="border-red-500 text-red-500">in-person socializing</WrappedText>
                 <WrappedText size="large" className="border-orange-500 text-orange-500">1 hour/week</WrappedText>
                 <WrappedText size="large" className="border-amber-500 text-amber-500">free pizza and goodies</WrappedText>
             </div>
-            <Heading>we host meetings <Highlight>every week</Highlight></Heading>
-            <Paragraph>this is where you will take any idea you're excited about, figure out how to bring it to life, and turn it into something that people give a shit about - alongside thousands of others.</Paragraph>
+            <Paragraph>we teach students how to build exciting projects from start to finish while fostering a collaborative and innovative environment for all skill levels.</Paragraph>
         </div>
 
         <div class="box-border overflow-hidden w-full">
             <Scroll direction="horizontal-right">
-                <Cards items={[["project 1", "src1"], ["project 2", "src2"], ["project 3", "src3"], ["project 4", "src4"], ["project 5", "src5"]]} className='aspect-square' />
+                <Cards items={[["personalized music companion", "/projects/autochords.png"], ["predicts and analyzes price", "/projects/blik.png"], ["ai chess bot", "/projects/chess.png"], ["text to video generator", "/projects/edcomposer.png"], ["mockup concert website", "/projects/elements.png"], ["ai note taking app", "/projects/notty.png"], ["super mario maker replica", "/projects/pyrio.png"], ["shopping companion", "/projects/shopwise.png"], ["browser video tools", "/projects/videotools.png"]]} className='aspect-square' />
             </Scroll>
         </div>
     </CenteredSection>
 
     <CenteredSection id="mission" className="mb-24">
-        <GradientBlob top="-450px" left="-350px" scale="1.5" />
+        <GradientBlob top="-400px" left="-300px" scale="1.5" />
 
         <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:py-40 py-20">
             <WrappedText size="normal" className=''>what's our mission?</WrappedText>
             <Heading>we want to make computer science <Highlight>fun to learn</Highlight>.</Heading>
-            <Paragraph>it's pretty simple. you pick your own idea, build it, get feedback, and iterate. alongside thousands of others. we'll provide hacks + support, but our main goal is to just get you going and make progress.</Paragraph>
-            <Paragraph>all it takes is a <a href="" class="text-white underline">single click</a> to join</Paragraph>
+            <Paragraph>we provide a friendly space where students can learn coding through fun, hands-on projects with like-minded peers. we aim to simplify the complex process of building from scratch and build a love for technology in our members.</Paragraph>
+            <Paragraph>all it takes is a <a href="" class="text-white underline">single click</a> to be part of it.</Paragraph>
         </div>
     </CenteredSection>
 
-    <Team members={[["soham daga", "/team/soham.png"], ["dhravya shah", "/team/dhravya.png"], ["dhanush vardhan", "/team/dhanush.png"], ["bhoomi singhani", "/team/bhoomi.png"], ["aryan keluskar", "/team/aryan.png"]]}/>
+    <Team members={[["soham daga", "/team/soham.png", "technical director"], ["dhravya shah", "/team/dhravya.png", "vice president"], ["dhanush vardhan", "/team/dhanush.png", "president"], ["bhoomi singhani", "/team/bhoomi.png", "vp of operations"], ["aryan keluskar", "/team/aryan.png", "industry director"]]}/>
 
     <CenteredSection id="join" className="md:pt-40 md:pb-52 pt-20 pb-40 overflow-hidden">
         <GradientBlob top="0" left="5%" scale="1.5" />
