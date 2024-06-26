@@ -1,11 +1,12 @@
 ---
 interface Props {
+    id: string;
 	className: string;
 }
 
-const { className } = Astro.props;
+const { id, className } = Astro.props;
 ---
 
-<section class=`container mx-auto border border-dashed border-gray-700 flex flex-col items-center ${className}`>
+<section id={id} class=`container mx-auto relative border border-dashed border-gray-700 flex flex-col items-center ${className}`>
     <slot />
 </section>

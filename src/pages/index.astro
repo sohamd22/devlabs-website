@@ -16,6 +16,8 @@ import Button from '../components/Button.astro';
 import Scroll from '../components/Scroll.astro';
 import Cards from '../components/Cards.astro';
 
+import GradientBlob from '../components/GradientBlob.astro';
+
 ---
 
 <Layout title="DevLabs">
@@ -23,26 +25,29 @@ import Cards from '../components/Cards.astro';
 
     <Main />
 
-    <Team members={["soham daga", "dhravya shah", "dhanush vardhan", "bhoomi singhani", "aryan keluskar"]}/>
+    <CenteredSection id="mission" className="mb-24">
+        <GradientBlob top="200px" left="65%" scale="1" />
 
-    <CenteredSection className="mb-24">
-        <div class="w-2/3 flex flex-col gap-16 items-center text-center py-40">
-            <WrappedText size="normal">what's our mission?</WrappedText>
+        <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:py-40 py-20">
+            <WrappedText size="normal" className=''>what's our mission?</WrappedText>
             <Heading>we want to make computer science <Highlight>fun to learn</Highlight>.</Heading>
             <Paragraph>it's pretty simple. you pick your own idea, build it, get feedback, and iterate. alongside thousands of others. we'll provide hacks + support, but our main goal is to just get you going and make progress.</Paragraph>
             <Paragraph>all it takes is a <a href="" class="text-white underline">single click</a> to join</Paragraph>
         </div>
-    
+
         <div class="box-border overflow-hidden w-full">
-            <Scroll direction="horizontal">
-                <Cards items={["project 1", "project 2", "project 3", "project 4", "project 5"]} className='aspect-square' />
+            <Scroll direction="horizontal-right">
+                <Cards items={[["project 1", "src1"], ["project 2", "src2"], ["project 3", "src3"], ["project 4", "src4"], ["project 5", "src5"]]} className='aspect-square' />
             </Scroll>
         </div>
     </CenteredSection>
 
-    <CenteredSection className="pt-40 pb-52">
-        <div class="w-1/2 flex flex-col gap-16 items-center text-center">
-            <WrappedText size="normal">first meeting on aug 26</WrappedText>
+    <Team members={[["soham daga", "/team/soham.png"], ["dhravya shah", "/team/dhravya.png"], ["dhanush vardhan", "/team/dhanush.png"], ["bhoomi singhani", "/team/bhoomi.png"], ["aryan keluskar", "/team/aryan.png"]]}/>
+
+    <CenteredSection id="join" className="md:pt-40 md:pb-52 pt-20 pb-40 overflow-hidden">
+        <GradientBlob top="0" left="10%" scale="1.5" />
+        <div class="w-1/2 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center">
+            <WrappedText size="normal" className=''>first meeting on aug 26</WrappedText>
             <HeadingBig>ready to build <Highlight>awesomeness</Highlight>?</HeadingBig>
             <Button>join devlabs (takes 20s)</Button>
         </div>

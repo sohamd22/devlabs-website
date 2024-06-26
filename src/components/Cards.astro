@@ -1,6 +1,6 @@
 ---
 interface Props {
-    items: Array<string>;
+    items: Array<Array<string>>;
     className: string;
 }
 
@@ -9,9 +9,9 @@ const { items, className } = Astro.props;
 
 {items.map(item => (
     <div class=`w-80 border border-dashed border-gray-700 flex flex-col justify-between shrink-0 ${className}`>
-        <img alt="a">
+        <img src={item[1]} alt={item[0]}>
         <div class="border border-dashed border-gray-700 px-5 py-4 text-center flex justify-center items-center">
-            <p class="text-base font-semibold leading-tight">{item}</p>
+            <p class="text-base font-semibold leading-tight">{item[0]}</p>
         </div>
     </div>
 ))}
