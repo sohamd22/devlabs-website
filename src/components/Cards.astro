@@ -2,17 +2,18 @@
 interface Props {
     items: Array<Array<string>>;
     className: string;
+    imageClass: string;
 }
 
-const { items, className } = Astro.props;
+const { items, className, imageClass } = Astro.props;
 
 import Highlight from "./text/Highlight.astro";
 ---
 
 {items.map(item => (
     <div class=`w-80 border border-dashed border-gray-700 flex flex-col justify-between shrink-0 overflow-hidden ${className}`>
-        <div class="bg-orange-500 h-full">
-            <img src={item[1]} alt={item[0]} class="object-cover h-full">
+        <div class="bg-gradient-to-r from-red-500 to-orange-500 h-full">
+            <img src={item[1]} alt={item[0]} class=`object-cover h-full ${imageClass}`>
         </div>
         
         <div class="border border-dashed border-gray-700 px-5 py-4 text-center flex justify-center items-center gap-2">

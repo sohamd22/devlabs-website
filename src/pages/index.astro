@@ -26,7 +26,7 @@ import GradientBlob from '../components/GradientBlob.astro';
     <Main />
 
     <CenteredSection id="about" className="mb-24">
-        <GradientBlob top="-450px" right="-350px" scale="1.5" />
+        <GradientBlob top="-450px" right="-350px" left="" scale="1.5" />
 
         <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:pt-40 md:pb-32 py-20">
             <WrappedText size="normal" className=''>what do we do?</WrappedText>
@@ -41,30 +41,35 @@ import GradientBlob from '../components/GradientBlob.astro';
 
         <div class="box-border overflow-hidden w-full">
             <Scroll direction="horizontal-right">
-                <Cards items={[["personalized music companion", "/projects/autochords.png"], ["predicts and analyzes price", "/projects/blik.png"], ["ai chess bot", "/projects/chess.png"], ["text to video generator", "/projects/edcomposer.png"], ["mockup concert website", "/projects/elements.png"], ["ai note taking app", "/projects/notty.png"], ["super mario maker replica", "/projects/pyrio.png"], ["shopping companion", "/projects/shopwise.png"], ["browser video tools", "/projects/videotools.png"]]} className='aspect-square' />
+                <Cards items={[["personalized music companion", "/projects/autochords.png"], ["predicts and analyzes price", "/projects/blik.png"], ["ai chess bot", "/projects/chess.png"], ["text to video generator", "/projects/edcomposer.png"], ["mockup concert website", "/projects/elements.png"], ["ai note taking app", "/projects/notty.png"], ["super mario maker replica", "/projects/pyrio.png"], ["shopping companion", "/projects/shopwise.png"], ["browser video tools", "/projects/videotools.png"]]} className='aspect-square' imageClass='' />
             </Scroll>
         </div>
     </CenteredSection>
 
     <CenteredSection id="mission" className="mb-24">
-        <GradientBlob top="-400px" left="-300px" scale="1.5" />
+        <GradientBlob top="-400px" left="-300px" right="" scale="1.5" />
 
         <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:py-40 py-20">
             <WrappedText size="normal" className=''>what's our mission?</WrappedText>
             <Heading>we want to make computer science <Highlight>fun to learn</Highlight>.</Heading>
             <Paragraph>we provide a friendly space where students can learn coding through fun, hands-on projects with like-minded peers. we aim to simplify the complex process of building from scratch and build a love for technology in our members.</Paragraph>
-            <Paragraph>all it takes is a <a href="" class="text-white underline">single click</a> to be part of it.</Paragraph>
+            <Paragraph>all it takes is a <a href="https://asu.campuslabs.com/engage/organization/devlabs" class="text-white underline">single click</a> to be part of it.</Paragraph>
         </div>
     </CenteredSection>
 
-    <Team members={[["soham daga", "/team/soham.png", "technical director"], ["dhravya shah", "/team/dhravya.png", "vice president"], ["dhanush vardhan", "/team/dhanush.png", "president"], ["bhoomi singhani", "/team/bhoomi.png", "vp of operations"], ["aryan keluskar", "/team/aryan.png", "industry director"]]}/>
+    <Team members={[["soham daga", "/team/soham.jpg", "technical director"], ["dhravya shah", "/team/dhravya.png", "vice president"],
+     ["dhanush vardhan", "/team/dhanush.jpg", "president"], ["bhoomi singhani", "/team/bhoomi.jpeg", "vp of operations"],
+     ["chakshu jain", "/team/chakshu.JPG", "vp of finance"], ["aryan keluskar", "/team/aryan.png", "industry director"],
+     ["adwait more", "/team/adwait.jpg", "marketing director"], ["devansh gupta", "/team/devansh.png", "industry officer"],
+     ["aditya bohra", "/team/aditya.jpg", "marketing officer"], ["riya ubhe", "/team/riya.jpg", "marketing officer"],
+     ["anay shirolkar", "/team/anay.jpg", "marketing officer"]]}/>
 
     <CenteredSection id="join" className="md:pt-40 md:pb-52 pt-20 pb-40 overflow-hidden">
-        <GradientBlob top="0" left="5%" scale="1.5" />
+        <GradientBlob top="0" left="5%" right="" scale="1.5" />
         <div class="w-1/2 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center">
             <WrappedText size="normal" className=''>first meeting on aug 26</WrappedText>
-            <HeadingBig>ready to build <Highlight>awesomeness</Highlight>?</HeadingBig>
-            <Button>join devlabs (takes 20s)</Button>
+            <HeadingBig>ready to build <Highlight>the future</Highlight>?</HeadingBig>
+            <Button>join devlabs (it'll be fun)</Button>
         </div>
     </CenteredSection>
 
