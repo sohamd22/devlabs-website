@@ -6,5 +6,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: "https://sohamd22.github.io/devlabs-website",
-  base: "/"
+  base: "/devlabs-website"
 });
