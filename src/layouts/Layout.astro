@@ -1,0 +1,42 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+
+		<link
+			rel="icon"
+			href="/devlabs-website/logo.svg"
+			type="image/x-icon"
+		/>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+	</head>
+	<body class="text-gray-400 overflow-x-hidden">
+		<slot />
+	</body>
+</html>
+<style is:global>
+	html {
+		font-family: Manrope, sans-serif;
+	}
+
+	body {
+		background-color: #080808;
+		background-image: url('/devlabs-website/noise.png');
+	}
+</style>

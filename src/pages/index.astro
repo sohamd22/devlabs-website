@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Main from '../components/Main.astro';
+import Team from '../components/Team.astro';
+import CenteredSection from '../components/CenteredSection.astro';
+import Navbar from '../components/Navbar.astro';
+
+import WrappedText from '../components/text/WrappedText.astro';
+import Heading from '../components/text/Heading.astro';
+import HeadingBig from '../components/text/HeadingBig.astro';
+import Highlight from '../components/text/Highlight.astro';
+import Paragraph from '../components/text/Paragraph.astro';
+
+import Button from '../components/Button.astro';
+import Scroll from '../components/Scroll.astro';
+import Cards from '../components/Cards.astro';
+
+import GradientBlob from '../components/GradientBlob.astro';
+
+---
+
+<Layout title="DevLabs">
+	<Header />
+
+    <Main />
+
+    <CenteredSection id="about" className="mb-24">
+        <GradientBlob top="-450px" right="-350px" left="" scale="1.5" />
+
+        <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:pt-40 md:pb-32 py-20">
+            <WrappedText size="normal" className=''>what do we do?</WrappedText>
+            <Heading>we're an <img src="/devlabs-website/asu.png" alt="ASU" class="xl:h-11 md:h-8 h-6 mb-2 inline-block"> club that hosts meetings <Highlight>every week</Highlight></Heading>
+            <div class="flex flex-wrap gap-3 justify-center">
+                <WrappedText size="large" className="border-orange-300 text-orange-300">in-person socializing</WrappedText>
+                <WrappedText size="large" className="border-orange-300 text-orange-300">1 hour/week</WrappedText>
+                <WrappedText size="large" className="border-orange-300 text-orange-300">free pizza and goodies</WrappedText>
+            </div>
+            <Paragraph>we teach students how to build exciting projects from start to finish while fostering a collaborative and innovative environment for all skill levels.</Paragraph>
+        </div>
+
+        <div class="box-border overflow-hidden w-full">
+            <Scroll direction="horizontal-right">
+                <Cards items={[["personalized music companion", "/projects/autochords.png"], ["predicts and analyzes price", "/projects/blik.png"], ["ai chess bot", "/projects/chess.png"], ["text to video generator", "/projects/edcomposer.png"], ["mockup concert website", "/projects/elements.png"], ["ai note taking app", "/projects/notty.png"], ["super mario maker replica", "/projects/pyrio.png"], ["shopping companion", "/projects/shopwise.png"], ["browser video tools", "/projects/videotools.png"]]} className='aspect-square' imageClass='' />
+            </Scroll>
+        </div>
+    </CenteredSection>
+
+    <CenteredSection id="mission" className="mb-24">
+        <GradientBlob top="-400px" left="-300px" right="" scale="1.5" />
+
+        <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:py-40 py-20">
+            <WrappedText size="normal" className=''>why're we doing this?</WrappedText>
+            <Heading>we want to make computer science <Highlight>fun to learn</Highlight>.</Heading>
+            <Paragraph>we provide a friendly space where students can learn coding through fun, hands-on projects with like-minded peers. we aim to simplify the complex process of building from scratch and build a love for technology in our members.</Paragraph>
+            <Paragraph>all it takes is a <a href="https://asu.campuslabs.com/engage/organization/devlabs" class="text-white underline">single click</a> to be part of it.</Paragraph>
+        </div>
+    </CenteredSection>
+
+    <Team members={[["soham daga", "/team/soham.jpg", "technical director"], ["dhravya shah", "/team/dhravya.png", "vice president"],
+     ["dhanush vardhan", "/team/dhanush.jpg", "president"], ["bhoomi singhani", "/team/bhoomi.jpeg", "vp of operations"],
+     ["chakshu jain", "/team/chakshu.JPG", "vp of finance"], ["aryan keluskar", "/team/aryan.png", "industry director"],
+     ["adwait more", "/team/adwait.jpg", "marketing director"], ["devansh gupta", "/team/devansh.png", "industry officer"],
+     ["aditya bohra", "/team/aditya.jpg", "marketing officer"], ["riya ubhe", "/team/riya.jpg", "marketing officer"],
+     ["anay shirolkar", "/team/anay.jpg", "marketing officer"]]}/>
+
+    <CenteredSection id="join" className="md:pt-40 md:pb-52 pt-20 pb-40 overflow-hidden">
+        <GradientBlob top="0" left="5%" right="" scale="1.5" />
+        <div class="w-1/2 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center">
+            <WrappedText size="normal" className=''>first meeting on aug 26</WrappedText>
+            <HeadingBig>ready to build <Highlight>the future</Highlight>?</HeadingBig>
+            <div class="flex flex-col gap-8 items-center w-full">
+                <Paragraph>We're ready, all thanks to our sponsors.</Paragraph>
+               
+            </div>
+             <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 justify-center items-center gap-6 w-full">
+                    <img src="/devlabs-website/sponsors/cloudflare.svg" alt="Cloudflare" class="inline-block h-8 md:h-12 px-2">
+                    <img src="/devlabs-website/sponsors/devfolio.svg" alt="Devfolio" class="inline-block h-8 md:h-11 px-2">
+                </div>
+            <Button>join devlabs (it's fun)</Button>
+        </div>
+    </CenteredSection>
+
+    <Navbar />
+</Layout>
+

@@ -1,0 +1,9 @@
+<svg width="41" height="45" viewBox="0 0 41 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#fb923c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path d="M6.1816 3L2 29.4706L19.9211 43M6.1816 3L16.9343 14.7647M6.1816 3L12.0411 20.0588M19.9211 43L39.037 29.4706L34.2581 3M19.9211 43L34.2581 3M19.9211 43L12.0411 20.0588M34.2581 3L23.5054 14.7647M23.5054 14.7647H16.9343M23.5054 14.7647L28.2843 18.8824M16.9343 14.7647L12.7527 18.8824L12.0411 20.0588" stroke="url(#orangeGradient)" stroke-width="2"/>
+</svg>
