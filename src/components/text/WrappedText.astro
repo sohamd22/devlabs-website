@@ -7,4 +7,4 @@ interface Props {
 const { size, className } = Astro.props;
 ---
 
-{size == "large" ? <span class={`xl:text-xl md:text-lg text-base w-max font-normal p-3 border border-dashed opacity-75 ${className}`}><slot /></span> : <span class="w-max font-semibold p-2 bg-gradient-to-r from-red-500 to-orange-500 text-black"><slot /></span>}
+{size == "large" ? <span class={`xl:text-xl md:text-lg text-base w-max font-normal p-3 border border-dashed opacity-75 ${className}`}><slot /></span> : <span class="w-max font-semibold p-2 bg-gradient-to-r from-orange-500 to-orange-300 text-black rounded-sm"><slot /></span>}

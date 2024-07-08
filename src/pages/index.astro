@@ -26,15 +26,15 @@ import GradientBlob from '../components/GradientBlob.astro';
     <Main />
 
     <CenteredSection id="about" className="mb-24">
-        <GradientBlob top="-450px" right="-350px" left="" scale="1.5" />
+        <GradientBlob top="" right="" left="0" scale="1.5" />
 
         <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:pt-40 md:pb-32 py-20">
             <WrappedText size="normal" className=''>what do we do?</WrappedText>
             <Heading>we're an <img src="/devlabs-website/asu.png" alt="ASU" class="xl:h-11 md:h-8 h-6 mb-2 inline-block"> club that hosts meetings <Highlight>every week</Highlight></Heading>
-            <div class="flex flex-wrap gap-2 justify-center">
-                <WrappedText size="large" className="border-red-500 text-red-500">in-person socializing</WrappedText>
-                <WrappedText size="large" className="border-orange-500 text-orange-500">1 hour/week</WrappedText>
-                <WrappedText size="large" className="border-amber-500 text-amber-500">free pizza and goodies</WrappedText>
+            <div class="flex flex-wrap gap-3 justify-center">
+                <WrappedText size="large" className="border-orange-300 text-orange-300">in-person socializing</WrappedText>
+                <WrappedText size="large" className="border-orange-300 text-orange-300">1 hour/week</WrappedText>
+                <WrappedText size="large" className="border-orange-300 text-orange-300">free pizza and goodies</WrappedText>
             </div>
             <Paragraph>we teach students how to build exciting projects from start to finish while fostering a collaborative and innovative environment for all skill levels.</Paragraph>
         </div>
@@ -69,19 +69,18 @@ import GradientBlob from '../components/GradientBlob.astro';
         <div class="w-1/2 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center">
             <WrappedText size="normal" className=''>first meeting on aug 26</WrappedText>
             <HeadingBig>ready to build <Highlight>the future</Highlight>?</HeadingBig>
-            <div class="flex flex-col gap-8 items-center">
+            <div class="flex flex-col gap-8 items-center w-full">
                 <Paragraph>We're ready, all thanks to our sponsors.</Paragraph>
-                <div class="flex items-center gap-6">
-                    <img src="/devlabs-website/sponsors/cloudflare.svg" alt="Cloudflare" class="inline-block h-8 px-2">
-                    <img src="/devlabs-website/sponsors/devfolio.svg" alt="Devfolio" class="inline-block h-6 px-2">
-                </div>
+               
             </div>
-            
+             <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 justify-center items-center gap-6 w-full">
+                    <img src="/devlabs-website/sponsors/cloudflare.svg" alt="Cloudflare" class="inline-block h-8 md:h-12 px-2">
+                    <img src="/devlabs-website/sponsors/devfolio.svg" alt="Devfolio" class="inline-block h-8 md:h-11 px-2">
+                </div>
             <Button>join devlabs (it's fun)</Button>
         </div>
     </CenteredSection>
 
     <Navbar />
 </Layout>
-
 
