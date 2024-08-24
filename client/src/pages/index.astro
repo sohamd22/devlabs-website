@@ -12,9 +12,10 @@ import HeadingBig from '../components/text/HeadingBig.astro';
 import Highlight from '../components/text/Highlight.astro';
 import Paragraph from '../components/text/Paragraph.astro';
 
-import Button from '../components/Button.astro';
+import LinkButton from '../components/LinkButton.astro';
 import Scroll from '../components/Scroll.astro';
 import Cards from '../components/Cards.astro';
+import ContactForm from '../components/ContactForm.astro';
 
 import GradientBlob from '../components/GradientBlob.astro';
 
@@ -32,9 +33,9 @@ import GradientBlob from '../components/GradientBlob.astro';
             <WrappedText size="normal" className=''>what do we do?</WrappedText>
             <Heading>we're an <img src="/devlabs-website/asu.png" alt="ASU" class="xl:h-11 md:h-8 h-6 mb-2 inline-block"> club that hosts meetings <Highlight>every week</Highlight></Heading>
             <div class="flex flex-wrap gap-2 justify-center">
-                <WrappedText size="large" className="border-red-500 text-red-500">in-person socializing</WrappedText>
-                <WrappedText size="large" className="border-orange-500 text-orange-500">1 hour/week</WrappedText>
-                <WrappedText size="large" className="border-amber-500 text-amber-500">free pizza and goodies</WrappedText>
+                <WrappedText size="large" className="border-orange-300 text-orange-300">in-person socializing</WrappedText>
+                <WrappedText size="large" className="border-orange-300 text-orange-300">1 hour/week</WrappedText>
+                <WrappedText size="large" className="border-orange-300 text-orange-300">free pizza and goodies</WrappedText>
             </div>
             <Paragraph>we teach students how to build exciting projects from start to finish while fostering a collaborative and innovative environment for all skill levels.</Paragraph>
         </div>
@@ -64,10 +65,20 @@ import GradientBlob from '../components/GradientBlob.astro';
      ["aditya bohra", "/team/aditya.jpg", "marketing officer"], ["riya ubhe", "/team/riya.jpg", "marketing officer"],
      ["anay shirolkar", "/team/anay.jpg", "marketing officer"]]}/>
 
+    <CenteredSection id="mission" className="mb-24">
+        <GradientBlob top="-400px" right="-350px" left="" scale="1.5" />
+
+        <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:py-40 py-20">
+            <WrappedText size="normal" className=''>want to talk to us?</WrappedText>
+            <Heading><Highlight>reach out</Highlight> and say hi.</Heading>
+            <ContactForm />
+        </div>
+    </CenteredSection>
+
     <CenteredSection id="join" className="md:pt-40 md:pb-52 pt-20 pb-40 overflow-hidden">
         <GradientBlob top="0" left="5%" right="" scale="1.5" />
         <div class="w-1/2 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center">
-            <WrappedText size="normal" className=''>first meeting on aug 26</WrappedText>
+            <WrappedText size="normal" className=''>first meeting on aug 28</WrappedText>
             <HeadingBig>ready to build <Highlight>the future</Highlight>?</HeadingBig>
             <div class="flex flex-col gap-8 items-center">
                 <Paragraph>We're ready, all thanks to our sponsors.</Paragraph>
@@ -77,7 +88,7 @@ import GradientBlob from '../components/GradientBlob.astro';
                 </div>
             </div>
             
-            <Button>join devlabs (it's fun)</Button>
+            <LinkButton>join devlabs (it's fun)</LinkButton>
         </div>
     </CenteredSection>
 
