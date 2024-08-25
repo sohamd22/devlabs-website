@@ -1,0 +1,10 @@
+<form id="contact-form" action="https://formsubmit.co/people@devlabs.club" method="POST" class="w-full flex flex-col gap-4 items-center">
+    <div class="w-full flex flex-col md:flex-row gap-4">
+        <input required name="Name" id="name" type="text" placeholder="your name" class="w-full bg-neutral-900 p-4 outline-none text-white focus:bg-stone-900">
+        <input required name="Email" id="email" type="email" placeholder="your email" class="w-full bg-neutral-900 p-4 outline-none text-white focus:bg-stone-900">
+    </div>
+    <textarea required name="Message" id="message" placeholder="your message" class="w-full resize-none bg-neutral-900 p-4 outline-none text-white focus:bg-stone-900"></textarea>
+    <button type="submit" class="mt-6 xl:text-lg text-base bg-white hover:bg-gray-300 transition-colors duration-200 ease-in-out font-semibold text-black w-max px-5 py-3">submit</button>
+    <input type="hidden" name="_next" value="https://devlabs.club">
+    <input type="hidden" name="_template" value="table">
+</form>
