@@ -27,7 +27,7 @@ import GradientBlob from '../components/GradientBlob.astro';
     <Main />
 
     <CenteredSection id="about" className="mb-24">
-        <GradientBlob top="-450px" right="-350px" left="" scale="1.5" />
+        <GradientBlob top="" right="" left="0" scale="1.5" />
 
         <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:pt-40 md:pb-32 py-20">
             <WrappedText size="normal" className=''>what do we do?</WrappedText>
@@ -80,11 +80,13 @@ import GradientBlob from '../components/GradientBlob.astro';
         <div class="w-1/2 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center">
             <WrappedText size="normal" className=''>first meeting on aug 28</WrappedText>
             <HeadingBig>ready to build <Highlight>the future</Highlight>?</HeadingBig>
-            <div class="flex flex-col gap-8 items-center">
+            <div class="flex flex-col gap-8 items-center w-full">
                 <Paragraph>We're ready, all thanks to our sponsors.</Paragraph>
-                <div class="flex items-center gap-6">
-                    <img src="/devlabs-website/sponsors/cloudflare.svg" alt="Cloudflare" class="inline-block h-8 px-2">
-                    <img src="/devlabs-website/sponsors/devfolio.svg" alt="Devfolio" class="inline-block h-6 px-2">
+               
+            </div>
+             <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 justify-center items-center gap-6 w-full">
+                    <img src="/devlabs-website/sponsors/cloudflare.svg" alt="Cloudflare" class="inline-block h-8 md:h-12 px-2">
+                    <img src="/devlabs-website/sponsors/devfolio.svg" alt="Devfolio" class="inline-block h-8 md:h-11 px-2">
                 </div>
             </div>
             
@@ -94,5 +96,4 @@ import GradientBlob from '../components/GradientBlob.astro';
 
     <Navbar />
 </Layout>
-
 

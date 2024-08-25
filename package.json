@@ -7,9 +7,11 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "bun run build && wrangler pages deploy dist"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^11.0.1",
     "@astrojs/tailwind": "^5.1.0",
     "@types/axios": "^0.14.0",
     "astro": "^4.10.3"
