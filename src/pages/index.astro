@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Main from '../components/Main.astro';
+import Events from '../components/Events.astro';
 import Team from '../components/Team.astro';
 import CenteredSection from '../components/CenteredSection.astro';
 import Navbar from '../components/Navbar.astro';
@@ -58,6 +59,8 @@ import GradientBlob from '../components/GradientBlob.astro';
         </div>
     </CenteredSection>
 
+    <Events />
+
     <Team members={[["soham daga", "/team/soham.jpg", "technical director"], ["dhravya shah", "/team/dhravya.png", "vice president"],
      ["dhanush vardhan", "/team/dhanush.jpg", "president"], ["bhoomi singhani", "/team/bhoomi.jpeg", "vp of operations"],
      ["chakshu jain", "/team/chakshu.JPG", "vp of finance"], ["aryan keluskar", "/team/aryan.png", "industry director"],
@@ -65,7 +68,7 @@ import GradientBlob from '../components/GradientBlob.astro';
      ["aditya bohra", "/team/aditya.jpg", "marketing officer"], ["riya ubhe", "/team/riya.jpg", "marketing officer"],
      ["anay shirolkar", "/team/anay.jpg", "marketing officer"]]}/>
 
-    <CenteredSection id="mission" className="mb-24">
+    <CenteredSection id="contact" className="mb-24">
         <GradientBlob top="-400px" right="-350px" left="" scale="1.5" />
 
         <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:py-40 py-20">
@@ -85,9 +88,8 @@ import GradientBlob from '../components/GradientBlob.astro';
                
             </div>
              <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 justify-center items-center gap-6 w-full">
-                    <img src="/devlabs-website/sponsors/cloudflare.svg" alt="Cloudflare" class="inline-block h-8 md:h-12 px-2">
-                    <img src="/devlabs-website/sponsors/devfolio.svg" alt="Devfolio" class="inline-block h-8 md:h-11 px-2">
-                </div>
+                <img src="/devlabs-website/sponsors/cloudflare.svg" alt="Cloudflare" class="inline-block h-8 md:h-12 px-2">
+                <img src="/devlabs-website/sponsors/devfolio.svg" alt="Devfolio" class="inline-block h-8 md:h-11 px-2">
             </div>
             
             <LinkButton>join devlabs (it's fun)</LinkButton>
