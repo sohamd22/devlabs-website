@@ -1,0 +1,355 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import CenteredSection from "../components/CenteredSection.astro";
+import Navbar from "../components/Navbar.astro";
+
+import WrappedText from "../components/text/WrappedText.astro";
+import Heading from "../components/text/Heading.astro";
+import HeadingBig from "../components/text/HeadingBig.astro";
+import Highlight from "../components/text/Highlight.astro";
+import Paragraph from "../components/text/Paragraph.astro";
+
+import LinkButton from "../components/LinkButton.astro";
+import GradientBlob from "../components/GradientBlob.astro";
+import ContactForm from "../components/ContactForm.astro";
+---
+
+<Layout title="DevHacks - DevLabs Annual Hackathon">
+  <Header />
+
+  <!-- Hero Section -->
+  <CenteredSection className="mb-24 relative">
+    <GradientBlob top="" right="" left="0" scale="1.5" />
+    
+    <div class="w-full h-screen flex flex-col justify-center items-center text-center">
+      <WrappedText size="large" className="border-orange-300 text-orange-300 mb-4">
+        DevLabs presents
+      </WrappedText>
+      <HeadingBig>
+        <Highlight>DevHacks</Highlight> 2023
+      </HeadingBig>
+      <Paragraph class="mt-8 max-w-2xl">
+        A 48-hour coding adventure where innovation meets code. Join us for ASU's premier hackathon experience!
+      </Paragraph>
+      <div class="flex flex-wrap gap-4 justify-center mt-12">
+        <LinkButton link="http://localhost:3000/register">Register Now</LinkButton>
+        <LinkButton link="#details">Learn More</LinkButton>
+      </div>
+      
+      <div class="mt-16 flex flex-wrap gap-6 justify-center">
+        <WrappedText size="large" className="border-orange-300 text-orange-300">
+          November 10-12, 2023
+        </WrappedText>
+        <WrappedText size="large" className="border-orange-300 text-orange-300">
+          ASU Tempe Campus
+        </WrappedText>
+      </div>
+    </div>
+  </CenteredSection>
+
+  <!-- About Section -->
+  <CenteredSection id="details" className="mb-24">
+    <GradientBlob top="-400px" left="-300px" right="" scale="1.5" />
+
+    <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:py-40 py-20">
+      <WrappedText size="normal" className="">what is devhacks?</WrappedText>
+      <Heading>
+        where <Highlight>ideas</Highlight> become <Highlight>reality</Highlight>
+      </Heading>
+      <Paragraph>
+        DevHacks is ASU's premier student-led hackathon, bringing together passionate developers, 
+        designers, and innovators for 48 hours of collaborative creation. Whether you're a coding 
+        expert or just starting out, DevHacks provides the perfect environment to learn, build, 
+        and connect.
+      </Paragraph>
+      
+      <div class="grid md:grid-cols-3 gap-8 w-full mt-8">
+        <div class="flex flex-col items-center gap-4">
+          <div class="bg-orange-300/20 p-6 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-orange-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg>
+          </div>
+          <Heading>Create</Heading>
+          <Paragraph>Build innovative projects from scratch in just 48 hours</Paragraph>
+        </div>
+        
+        <div class="flex flex-col items-center gap-4">
+          <div class="bg-orange-300/20 p-6 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-orange-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <Heading>Connect</Heading>
+          <Paragraph>Network with industry professionals and like-minded peers</Paragraph>
+        </div>
+        
+        <div class="flex flex-col items-center gap-4">
+          <div class="bg-orange-300/20 p-6 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-orange-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <Heading>Win</Heading>
+          <Paragraph>Compete for amazing prizes and recognition</Paragraph>
+        </div>
+      </div>
+    </div>
+  </CenteredSection>
+
+  <!-- Schedule Section -->
+  <CenteredSection id="schedule" className="mb-24">
+    <GradientBlob top="" right="" left="0" scale="1.5" />
+
+    <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:py-40 py-20">
+      <WrappedText size="normal" className="">event schedule</WrappedText>
+      <Heading>
+        <Highlight>48 hours</Highlight> of innovation
+      </Heading>
+      
+      <div class="w-full max-w-3xl">
+        <div class="flex flex-col gap-8">
+          <!-- Day 1 -->
+          <div class="bg-gray-900/50 p-6 rounded-lg">
+            <h3 class="text-xl font-bold text-orange-300 mb-4">Day 1 - Friday, November 10</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="flex items-start gap-3">
+                <span class="text-orange-300 font-mono">5:00 PM</span>
+                <span>Check-in & Registration</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-300 font-mono">6:00 PM</span>
+                <span>Opening Ceremony</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-300 font-mono">7:00 PM</span>
+                <span>Team Formation</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-300 font-mono">8:00 PM</span>
+                <span>Hacking Begins!</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-300 font-mono">10:00 PM</span>
+                <span>Late Night Snacks</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Day 2 -->
+          <div class="bg-gray-900/50 p-6 rounded-lg">
+            <h3 class="text-xl font-bold text-orange-300 mb-4">Day 2 - Saturday, November 11</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="flex items-start gap-3">
+                <span class="text-orange-300 font-mono">8:00 AM</span>
+                <span>Breakfast</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-300 font-mono">12:00 PM</span>
+                <span>Lunch & Workshops</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-300 font-mono">3:00 PM</span>
+                <span>Mentorship Sessions</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-300 font-mono">6:00 PM</span>
+                <span>Dinner</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-300 font-mono">9:00 PM</span>
+                <span>Gaming Break</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Day 3 -->
+          <div class="bg-gray-900/50 p-6 rounded-lg">
+            <h3 class="text-xl font-bold text-orange-300 mb-4">Day 3 - Sunday, November 12</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="flex items-start gap-3">
+                <span class="text-orange-300 font-mono">8:00 AM</span>
+                <span>Breakfast</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-300 font-mono">12:00 PM</span>
+                <span>Hacking Ends</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-300 font-mono">1:00 PM</span>
+                <span>Project Presentations</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-300 font-mono">3:00 PM</span>
+                <span>Judging</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-orange-300 font-mono">4:30 PM</span>
+                <span>Awards & Closing Ceremony</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </CenteredSection>
+
+  <!-- Prizes Section -->
+  <CenteredSection id="prizes" className="mb-24">
+    <GradientBlob top="-400px" right="-350px" left="" scale="1.5" />
+
+    <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:py-40 py-20">
+      <WrappedText size="normal" className="">what can you win?</WrappedText>
+      <Heading>amazing <Highlight>prizes</Highlight> await</Heading>
+      
+      <div class="grid md:grid-cols-3 gap-8 w-full mt-8">
+        <div class="bg-gray-900/50 p-8 rounded-lg flex flex-col items-center">
+          <div class="text-5xl font-bold text-yellow-400 mb-4">1st</div>
+          <Heading>$1,000</Heading>
+          <Paragraph>Per team member + exclusive tech gadgets</Paragraph>
+        </div>
+        
+        <div class="bg-gray-900/50 p-8 rounded-lg flex flex-col items-center">
+          <div class="text-5xl font-bold text-gray-300 mb-4">2nd</div>
+          <Heading>$500</Heading>
+          <Paragraph>Per team member + premium subscriptions</Paragraph>
+        </div>
+        
+        <div class="bg-gray-900/50 p-8 rounded-lg flex flex-col items-center">
+          <div class="text-5xl font-bold text-amber-700 mb-4">3rd</div>
+          <Heading>$250</Heading>
+          <Paragraph>Per team member + swag packages</Paragraph>
+        </div>
+      </div>
+      
+      <div class="mt-12">
+        <Paragraph>
+          Additional category prizes include Best UI/UX, Most Innovative, Best Use of AI, 
+          and Audience Choice Award!
+        </Paragraph>
+      </div>
+    </div>
+  </CenteredSection>
+
+  <!-- Sponsors Section -->
+  <CenteredSection id="sponsors" className="mb-24">
+    <GradientBlob top="" right="" left="0" scale="1.5" />
+
+    <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:py-40 py-20">
+      <WrappedText size="normal" className="">our amazing sponsors</WrappedText>
+      <Heading>powered by <Highlight>industry leaders</Highlight></Heading>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-12 w-full mt-8">
+        <div class="flex items-center justify-center">
+          <img
+            src="/devlabs-website/sponsors/cloudflare.svg"
+            alt="Cloudflare"
+            class="h-12 md:h-16"
+          />
+        </div>
+        <div class="flex items-center justify-center">
+          <img
+            src="/devlabs-website/sponsors/devfolio.svg"
+            alt="Devfolio"
+            class="h-12 md:h-16"
+          />
+        </div>
+        <!-- Add more sponsor logos as needed -->
+        <div class="flex items-center justify-center opacity-50">
+          <span class="text-xl font-bold">Your Logo Here</span>
+        </div>
+        <div class="flex items-center justify-center opacity-50">
+          <span class="text-xl font-bold">Your Logo Here</span>
+        </div>
+      </div>
+      
+      <div class="mt-12">
+        <Paragraph>
+          Interested in sponsoring DevHacks? Contact us at devlabs@asu.edu for sponsorship opportunities.
+        </Paragraph>
+        <LinkButton link="#contact" className="mt-6">Become a Sponsor</LinkButton>
+      </div>
+    </div>
+  </CenteredSection>
+
+  <!-- FAQ Section -->
+  <CenteredSection id="faq" className="mb-24">
+    <GradientBlob top="-400px" left="-300px" right="" scale="1.5" />
+
+    <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:py-40 py-20">
+      <WrappedText size="normal" className="">frequently asked questions</WrappedText>
+      <Heading>got <Highlight>questions</Highlight>?</Heading>
+      
+      <div class="w-full max-w-3xl grid gap-6">
+        <div class="bg-gray-900/50 p-6 rounded-lg text-left">
+          <h3 class="text-xl font-bold text-orange-300 mb-2">Who can participate?</h3>
+          <Paragraph>
+            DevHacks is open to all ASU students, regardless of major or experience level. 
+            Whether you're a coding expert or just starting out, everyone is welcome!
+          </Paragraph>
+        </div>
+        
+        <div class="bg-gray-900/50 p-6 rounded-lg text-left">
+          <h3 class="text-xl font-bold text-orange-300 mb-2">Do I need a team?</h3>
+          <Paragraph>
+            You can register as an individual or with a team of up to 4 people. 
+            Don't worry if you don't have a team - we'll have team formation activities 
+            at the beginning of the event!
+          </Paragraph>
+        </div>
+        
+        <div class="bg-gray-900/50 p-6 rounded-lg text-left">
+          <h3 class="text-xl font-bold text-orange-300 mb-2">What should I bring?</h3>
+          <Paragraph>
+            Bring your laptop, charger, student ID, and any other devices you might need. 
+            We'll provide food, drinks, and a comfortable hacking environment.
+          </Paragraph>
+        </div>
+        
+        <div class="bg-gray-900/50 p-6 rounded-lg text-left">
+          <h3 class="text-xl font-bold text-orange-300 mb-2">Is there a registration fee?</h3>
+          <Paragraph>
+            Nope! DevHacks is completely free for all participants. We provide meals, 
+            snacks, and swag at no cost to you.
+          </Paragraph>
+        </div>
+        
+        <div class="bg-gray-900/50 p-6 rounded-lg text-left">
+          <h3 class="text-xl font-bold text-orange-300 mb-2">What if I'm a beginner?</h3>
+          <Paragraph>
+            DevHacks is designed for all skill levels! We'll have workshops, mentors, 
+            and resources to help beginners get started and build amazing projects.
+          </Paragraph>
+        </div>
+      </div>
+    </div>
+  </CenteredSection>
+
+  <!-- Contact Section -->
+  <CenteredSection id="contact" className="mb-24">
+    <GradientBlob top="-400px" right="-350px" left="" scale="1.5" />
+
+    <div class="w-2/3 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center md:py-40 py-20">
+      <WrappedText size="normal" className="">have more questions?</WrappedText>
+      <Heading><Highlight>contact us</Highlight> anytime</Heading>
+      <ContactForm />
+    </div>
+  </CenteredSection>
+
+  <!-- Register CTA Section -->
+  <CenteredSection id="register" className="md:pt-40 md:pb-52 pt-20 pb-40 overflow-hidden">
+    <GradientBlob top="0" left="5%" right="" scale="1.5" />
+    <div class="w-1/2 flex flex-col lg:gap-16 md:gap-12 gap-8 items-center text-center">
+      <WrappedText size="normal" className="">limited spots available!</WrappedText>
+      <HeadingBig>ready to <Highlight>hack</Highlight>?</HeadingBig>
+      <Paragraph>
+        Join us for an unforgettable weekend of coding, learning, and innovation.
+        Register now to secure your spot at DevHacks 2023!
+      </Paragraph>
+      <LinkButton link="http://localhost:3000/register">Register for DevHacks</LinkButton>
+    </div>
+  </CenteredSection>
+
+  <Navbar />
+</Layout> 
